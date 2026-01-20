@@ -1,0 +1,143 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #f4f6f8;
+    color: #222;
+}
+
+header {
+    background-color: #1f4f73;
+    color: #ffffff;
+}
+
+#course-title {
+    display: block;
+    text-align: center;
+    padding: 1rem;
+    font-size: 1.4rem;
+    font-weight: bold;
+}
+
+nav {
+    background-color: #2f2f2f;
+    display: flex;
+    justify-content: center;
+}
+
+nav a {
+    color: #ffffff;
+    text-decoration: none;
+    padding: 0.75rem 6.5rem;
+    transition: background-color 0.2s ease;
+}
+
+nav a:hover {
+    background-color: #444444;
+}
+
+main {
+    max-width: 1000px;
+    margin: 2rem auto;
+    padding: 0 1rem;
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: 1.5rem;
+}
+
+h1 {
+    grid-column: 1 / -1;
+    text-align: center;
+    margin-bottom: 1rem;
+}
+
+.card {
+    background-color: #ffffff;
+    border-radius: 6px;
+    overflow: hidden;
+    border: 1px solid #ddd;
+}
+
+.card h2 {
+    background-color: #1f4f73;
+    color: #ffffff;
+    padding: 0.75rem;
+    font-size: 1.1rem;
+    text-align: center;
+}
+
+.card-content {
+    display: flex;
+    gap: 1rem;
+    padding: 1rem;
+}
+
+.card-content img {
+    width: 120px;
+    height: auto;
+}
+
+.card p {
+    font-size: 0.95rem;
+}
+
+h3 {
+    text-align: center;
+    padding: 0.5rem;
+    font-weight: bold;
+}
+
+.country-title {
+    display: inline-block;
+    padding-bottom: 0.25rem;
+    border-bottom: 2px solid #000;
+    width: 400px;
+    text-align: center;
+}
+
+.country {
+    display: flex;
+    gap: 1rem;
+    padding: 1rem;
+}
+
+.country img {
+    width: 140px;
+    height: auto;
+    border: 1px solid #ccc;
+}
+
+.card ul {
+    list-style: disc;
+    padding: 1rem 2rem;
+}
+
+.card ul li {
+    margin-bottom: 0.5rem;
+}
+
+.flag {
+    text-align: center;
+}
+
+.flag-caption {
+    font-style: italic;
+    font-size: 0.65rem;
+    margin-top: 0.25rem;
+}
+
+footer {
+    background-color: #1f4f73;
+    color: #ffffff;
+    text-align: center;
+    padding: 1rem;
+    margin-top: 2rem;
+}
+
+footer p {
+    font-size: 0.9rem;
+}

@@ -1,14 +1,89 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>WDD 130 | Personal Homepage</title>
-</head>
-<body>
-    <h1>Welcome to WDD 130.</h1>
-    <p>This page will become your homepage for the course. You will remove this text and replace it with your own personal details.</p>
+    <meta name="description"
+      content="WDD 131  Dynamic Web Fundamentals. Emaru Daniel. Course landing page using HTML, CSS, and JavaScript.">
+    <meta name="author" content="Emaru Daniel">
+    <title>WDD 131 Dynamic Web Fundamentals Emaru Daniel</title>
 
-    <img src="images/salt-lake-temple.jpg" alt="The Salt Lake Temple.">
+    <link rel="stylesheet" href="styles/styles.css">
+    <script src="scripts/getdates.js" defer></script>
+</head>
+
+<body>
+
+    <header>
+        <span id="course-title">WDD 131: Dynamic Web Fundamentals</span>
+        <nav>
+            <a href="https://www.linkedin.com/" target="_blank">LinkedIn</a>
+            <a href="https://byupw.instructure.com/" target="_blank">I-Learn</a>
+            <a href="https://www.churchofjesuschrist.org/study/scriptures"
+              target="_blank">Scripture</a>
+            <a href="#">Final Project</a>
+        </nav>
+    </header>
+
+    <main>
+        <h1>Emaru Daniel</h1>
+
+        <section class="card">
+            <h2>About Me</h2>
+            <div class="card-content">
+                <p>
+                    Hello! My name is Emaru Daniel and I am from Kampala, Uganda. I am studying
+                    Dynamic Web Fundamentals and
+                    learning how to
+                    build structured, accessible, and dynamic web pages using HTML, CSS, and
+                    JavaScript.
+                    I'm excited to learn web development in this WDD 131 course and build
+                    amazing websites! It is abit challenging to cop up with but with dedication and
+                    regular practice, I believe
+                    this module will become a reality to me, as it already looks facinating to me.
+                    Looking forward to a great
+                    time learning with you!
+                </p>
+                <img src="images/profile.jpg" alt="Profile photo of Emaru">
+            </div>
+
+            <h3><span class="country-title">Uganda</span></h3>
+            <div class="country">
+                <div class="flag">
+                    <img src="images/flag.png" alt="Flag of Uganda">
+                    <p class="flag-caption">Official flag of Uganda</p>
+                </div>
+
+                <p>
+                    Uganda, the Pearl of Africa, is a beautiful country located in East Africa. It
+                    is rich in
+                    culture, wildlife, natural landscapes, and warm, friendly people. From Lake
+                    Victoria to the
+                    green hills of Kampala, Uganda is a vibrant and diverse nation full of life and
+                    opportunity.
+                </p>
+            </div>
+        </section>
+
+        <section class="card">
+            <h2>Web Dev Resources</h2>
+            <ul>
+                <li><a href="https://developer.mozilla.org/" target="_blank">MDN Web Docs</a></li>
+                <li><a href="https://css-tricks.com/" target="_blank">CSS Tricks</a></li>
+                <li><a href="https://www.w3schools.com/" target="_blank">W3 Schools</a></li>
+                <li><a href="https://www.udemy.com/" target="_blank">Udemy</a></li>
+            </ul>
+        </section>
+    </main>
+
+    <footer>
+        <p>
+            © <span id="currentyear"></span> 🌴 Emaru Daniel 🌴 Kampala, Uganda.
+        </p>
+        <p id="lastModified"></p>
+    </footer>
+
 </body>
+
 </html>
