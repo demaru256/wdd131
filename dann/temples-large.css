@@ -4,13 +4,9 @@
     }
 
     nav {
-        display: flex;
+        display: flex !important;
         flex-direction: row;
         justify-content: center;
-    }
-
-    nav.open {
-        display: flex;
     }
 
     nav a {

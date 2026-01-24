@@ -1,11 +1,25 @@
 const menuButton = document.querySelector("#menu-button");
 const navMenu = document.querySelector("#nav-menu");
 
-menuButton.addEventListener("click", () => {
-  navMenu.classList.toggle("open");
-  menuButton.textContent = navMenu.classList.contains("open") ? "✖" : "☰";
-});
+if (menuButton && navMenu) {
+  menuButton.addEventListener("click", () => {
+    const isOpen = navMenu.classList.toggle("open");
+    menuButton.textContent = isOpen ? "✖" : "☰";
+    menuButton.setAttribute("aria-expanded", isOpen);
+  });
+
+  window.addEventListener("resize", () => {
+    if (window.innerWidth >= 768) {
+      navMenu.classList.remove("open");
+      menuButton.textContent = "☰";
+      menuButton.setAttribute("aria-expanded", false);
+    }
+  });
+}
 
 // Footer dates
-document.querySelector("#currentyear").textContent = new Date().getFullYear();
-document.querySelector("#lastModified").textContent = `Last Modified: ${document.lastModified}`;
+document.querySelector("#currentyear").textContent =
+  new Date().getFullYear();
+
+document.querySelector("#lastModified").textContent =
+  `Last Modified: ${document.lastModified}`;
