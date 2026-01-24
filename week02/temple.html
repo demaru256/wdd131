@@ -4,38 +4,87 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Temple Card - Abidjan Cote d'Ivoire</title>
+    <meta name="description" content="WDD 131 Temple Album by Emaru Daniel">
+    <meta name="author" content="Emaru Daniel">
+    <title>Temple Album</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&display=swap"
+      rel="stylesheet">
+
+    <link rel="stylesheet" href="styles/temples.css">
+    <link rel="stylesheet" href="styles/temples-large.css">
+    <script src="scripts/temples.js" defer></script>
 </head>
 
 <body>
     <header>
-        <p>Temples of the Church of Jesus Christ of Latter-day Saints</p>
+        <div class="header-content">
+            <span class="site-title">Temple Album</span>
+            <button id="menu-button" aria-label="Toggle navigation">☰</button>
+        </div>
+
+        <nav id="nav-menu" aria-label="Primary navigation">
+            <a href="#">Home</a>
+            <a href="#">Old</a>
+            <a href="#">New</a>
+            <a href="#">Large</a>
+            <a href="#">Small</a>
+        </nav>
     </header>
+
     <main>
-        <h1>Abidjan Cote d'Ivoire</h1>
-        <picture>
-            <img src="images/abidjan-ivory-coast.jpeg" alt="Abidjan Cote d'Ivoire Temple">
-        </picture>
-        <section>
-            <h2>About the Temple</h2>
-            <p>The Abidjan Ivory Coast Temple is the seventh temple built in Africa and the first for Ivory Coast (Côte
-                d'Ivoire).</p>
-            <p>Dedicated 25 May 2025: <a
-                    href="https://www.churchofjesuschrist.org/temples/dedicatory-prayer/abidjan-ivory-coast-temple/2025-05-25?lang=eng"
-                    target="_blank" rel="noopener noreferrer">Dedicatory Prayer</a></p>
-        </section>
-        <section>
-            <h2>Visiting Information</h2>
-            <ul>
-                <li>Location: Lot 118 Riviera Attoban Cocody Abidjan Cote d'Ivoire</li>
-                <li>Hours: Check Ordinance Schedule</li>
-                <li>Phone: +225 25 22 0 18010</li>
-                <li>Housing: Available</li>
-            </ul>
+        <h1>Home</h1>
+
+        <section class="gallery">
+            <!-- 9 figures -->
+            <figure>
+                <img src="images/San_Diego.jpg" alt="San Diego California Temple" width="400"
+                  height="250">
+                <figcaption>San Diego California</figcaption>
+            </figure>
+            <figure>
+                <img src="images/Salt_lake.jpg" alt="Salt Lake Temple" width="400" height="250">
+                <figcaption>Salt Lake City</figcaption>
+            </figure>
+            <figure>
+                <img src="images/Rome.jpg" alt="Rome Italy Temple" width="400" height="250">
+                <figcaption>Rome Italy</figcaption>
+            </figure>
+            <figure>
+                <img src="images/Accra.jpg" alt="Accra Ghana Temple" width="400" height="250">
+                <figcaption>Accra Ghana</figcaption>
+            </figure>
+            <figure>
+                <img src="images/Paris.jpg" alt="Paris France Temple" width="400" height="250">
+                <figcaption>Paris France</figcaption>
+            </figure>
+            <figure>
+                <img src="images/Mexico.jpg" alt="Ciudad Juárez Mexico Temple" width="400"
+                  height="250">
+                <figcaption>Ciudad Juárez Mexico</figcaption>
+            </figure>
+            <figure>
+                <img src="images/Tokyo.jpeg" alt="Tokyo Japan Temple" width="400" height="250">
+                <figcaption>Tokyo Japan</figcaption>
+            </figure>
+            <figure>
+                <img src="images/Manila.jpg" alt="Manila Philippines Temple" width="400"
+                  height="250">
+                <figcaption>Manila Philippines</figcaption>
+            </figure>
+            <figure>
+                <img src="images/Johannesburg.jpg" alt="Johannesburg Temple" width="400"
+                  height="250">
+                <figcaption>Johannesburg SA</figcaption>
+            </figure>
         </section>
     </main>
+
     <footer>
-        <p>Temple Card - Your Name</p>
+        <p>© <span id="currentyear"></span> 🌴 Emaru Daniel 🌴 Kampala, Uganda</p>
+        <p id="lastModified"></p>
     </footer>
 </body>
 
