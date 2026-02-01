@@ -16,23 +16,29 @@ body {
     background-color: var(--background);
     color: var(--text);
     line-height: 1.6;
+    font-size: 16px;
 }
 
 header {
     background-color: var(--primary);
     color: #fff;
     text-align: center;
-    padding: 1rem;
+    padding: 1rem 0.5rem;
+}
+
+header h1 {
+    font-size: 1.8rem;
 }
 
 .hero img {
     width: 100%;
     height: auto;
     display: block;
+    border-radius: 6px;
 }
 
 main {
-    padding: 1rem;
+    padding: 1rem 0.5rem;
 }
 
 section {
@@ -40,30 +46,64 @@ section {
     padding: 1rem;
     margin-bottom: 1rem;
     border-radius: 6px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
 }
 
 h2 {
     margin-bottom: 0.5rem;
+    font-size: 1.4rem;
 }
 
 .data ul {
     list-style: none;
+    padding-left: 0;
 }
 
 .data li {
-    margin-bottom: 0.3rem;
+    margin-bottom: 0.4rem;
+    font-size: 0.95rem;
 }
 
 .weather-icon {
-    width: 48px;
+    width: 40px;
     height: auto;
     margin-bottom: 0.5rem;
+}
+
+.weather p {
+    font-size: 0.95rem;
+    margin-bottom: 0.3rem;
 }
 
 footer {
     background-color: var(--secondary);
     color: #fff;
     text-align: center;
-    padding: 1rem;
-    font-size: 0.9rem;
+    padding: 1rem 0.5rem;
+    font-size: 0.85rem;
+    border-top: 2px solid #004d2e;
+}
+
+/* Small phones ≤ 390px */
+@media (max-width: 390px) {
+    header h1 {
+        font-size: 1.4rem;
+    }
+
+    section {
+        padding: 0.6rem;
+    }
+
+    h2 {
+        font-size: 1.1rem;
+    }
+
+    .weather-icon {
+        width: 28px;
+    }
+
+    .weather p,
+    .data li {
+        font-size: 0.85rem;
+    }
 }
