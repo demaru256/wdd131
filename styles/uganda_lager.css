@@ -10,9 +10,4 @@
     .weather-icon {
         display: none;
     }
-
-    /* Emoticon via pseudo-element */
-    .weather h2::after {
-        content: " ⛅";
-    }
 }
