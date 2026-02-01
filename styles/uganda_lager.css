@@ -6,7 +6,7 @@
         gap: 1rem;
     }
 
-    /* Hide SVG icon on large screens */
+    /* Hide weather SVG icon on large screens */
     .weather-icon {
         display: none;
     }
