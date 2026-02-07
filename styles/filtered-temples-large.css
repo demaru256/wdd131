@@ -1,11 +1,11 @@
 @media (min-width: 768px) {
 
-    /* hide hamburger */
+    /* Hide hamburger on desktop */
     #menu-button {
         display: none;
     }
 
-    /* show nav always */
+    /* Show nav always */
     nav {
         display: flex !important;
         flex-direction: row;
@@ -16,19 +16,23 @@
         padding: 1rem 1.5rem;
     }
 
-    main {
-        max-width: 1200px;
-    }
-
-    /* gallery grid desktop */
+    /* Gallery grid desktop */
     .gallery {
         grid-template-columns: repeat(3, 1fr);
         gap: 1.2rem;
     }
 
     figure img {
-        height: 220px;
         width: 100%;
+        aspect-ratio: 16/9;
         object-fit: cover;
     }
+
+    /* Optional: add hover effect to nav links on desktop as well */
+    nav a:hover {
+        background-color: #6a1ea3;
+        color: #ffeb3b;
+    }
+
+    /* Hover effect on cards already applied in mobile, works for desktop too */
 }
