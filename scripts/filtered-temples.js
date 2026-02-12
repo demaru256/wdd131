@@ -56,6 +56,13 @@ const temples = [
         imageUrl: "http://t1.gstatic.com/images?q=tbn:ANd9GcSnagCTRB4oVLfSEbhdmIzWvnSxhNrn1oEH7Dw9qUtJfUnOHu9e"
     },
     {
+        templeName: "Mexico City Mexico",
+        location: "Mexico City, Mexico",
+        dedicated: "1983, December, 2",
+        area: 116642,
+        imageUrl: "https://content.churchofjesuschrist.org/templesldsorg/bc/Temples/photo-galleries/mexico-city-mexico/400x250/mexico-city-temple-exterior-1518361-wallpaper.jpg"
+    }, 
+    {
         templeName: "Payson Utah Temple",
         location: "Utah, USA",
         dedicated: "2015, June, 7",

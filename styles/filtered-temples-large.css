@@ -16,10 +16,11 @@
         padding: 1rem 1.5rem;
     }
 
-    /* Gallery grid desktop */
+    /* Fluid gallery grid for all desktop sizes */
     .gallery {
-        grid-template-columns: repeat(3, 1fr);
-        gap: 1.2rem;
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+        gap: 1.5rem;
     }
 
     figure img {
@@ -28,11 +29,14 @@
         object-fit: cover;
     }
 
-    /* Optional: add hover effect to nav links on desktop as well */
+    /* Hover effect on nav links */
     nav a:hover {
         background-color: #6a1ea3;
         color: #ffeb3b;
     }
 
-    /* Hover effect on cards already applied in mobile, works for desktop too */
+    /* Optional: slightly more padding inside figure cards on desktop */
+    figure {
+        padding: 1.2rem;
+    }
 }

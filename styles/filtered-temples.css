@@ -55,9 +55,7 @@ nav a {
 /* Hover effect for nav links */
 nav a:hover {
     background-color: #6a1ea3;
-    /* lighter purple on hover */
     color: #ffeb3b;
-    /* yellow text */
 }
 
 /* Show nav when open on mobile */
