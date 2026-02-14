@@ -1,12 +1,18 @@
 @media (min-width: 768px) {
+
     main {
         max-width: 700px;
         margin: 0 auto;
+        /* center main container horizontally */
     }
 
     form {
         display: grid;
-        gap: 1rem;
+        gap: 10px;
+        max-width: 500px;
+        /* prevent form from stretching too wide */
+        margin: 0 auto;
+        /* center the form horizontally */
     }
 
     .stars {
