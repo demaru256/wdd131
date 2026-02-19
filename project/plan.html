@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="Plan your Uganda trip and submit your travel interests.">
+<meta name="author" content="Emaru Daniel">
+<title>Uganda Travel Guide | Plan Trip</title>
+<link rel="stylesheet" href="styles/mobile.css">
+<link rel="stylesheet" href="styles/desktop.css">
+<script src="scripts/main.js" defer></script>
+<script src="scripts/form.js" defer></script>
+</head>
+<body>
+<header>
+  <h1>Plan Your Trip</h1>
+  <nav>
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="destinations.html">Destinations</a></li>
+      <li><a href="culture.html">Culture & Food</a></li>
+      <li><a href="plan.html" class="active">Plan Trip</a></li>
+    </ul>
+  </nav>
+</header>
+
+<main class="container">
+  <h2>Travel Interest Form</h2>
+  <form id="tripForm">
+    <label for="name">Name:</label><br>
+    <input type="text" id="name" required><br>
+    <label for="email">Email:</label><br>
+    <input type="email" id="email" required><br>
+    <label for="destination">Destination:</label><br>
+    <select id="destination" required>
+      <option value="">Select</option>
+      <option value="Bwindi">Bwindi Impenetrable National Park</option>
+      <option value="Kampala">Kampala</option>
+      <option value="LakeVictoria">Lake Victoria</option>
+    </select><br><br>
+    <button type="submit">Submit</button>
+  </form>
+  <p id="formMessage"></p>
+</main>
+
+<footer>
+  <p>© <span id="currentyear"></span> 🌴 Emaru Daniel 🌴 Kampala, Uganda</p>
+  <p id="lastModified"></p>
+</footer>
+</body>
+</html>
